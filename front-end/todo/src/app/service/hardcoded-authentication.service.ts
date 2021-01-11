@@ -8,12 +8,12 @@ export class HardcodedAuthenticationService {
   constructor() { }
 
   authenticate(username, password) {
-    console.log('before: ' + this.isUserLoggedIn());
+    // console.log('before: ' + this.isUserLoggedIn());
 
     if (username === 'templeton' && password === 'dummy') {
       sessionStorage.setItem('authenticatedUser', username);
 
-      console.log('after: ' + this.isUserLoggedIn());
+      // console.log('after: ' + this.isUserLoggedIn());
 
       return true;
     } else {
@@ -25,5 +25,5 @@ export class HardcodedAuthenticationService {
     let user = sessionStorage.getItem('authenticatedUser');
 
     return !(user === null);
-  }
+  } 
 }
