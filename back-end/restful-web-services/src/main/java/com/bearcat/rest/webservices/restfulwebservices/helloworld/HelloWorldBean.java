@@ -1,4 +1,4 @@
-package com.bearcat.rest.webservices.restfulwebservices;
+package com.bearcat.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
     private String message;
