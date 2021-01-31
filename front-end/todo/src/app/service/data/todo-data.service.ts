@@ -6,7 +6,6 @@ import { Todo } from 'src/app/list-todos/list-todos.component';
   providedIn: 'root'
 })
 export class TodoDataService {
-
   constructor(
     private http: HttpClient
   ) { }
@@ -15,4 +14,14 @@ export class TodoDataService {
       return this.http.get<Todo[]>(`http://localhost:8080/users/${username}/todos`);
       // console.log("Execute Hello World Bean Service");
   }
+
+  retrieveTodo(username, id) {
+    return this.http.get<Todo>(`http://localhost:8080/users/${username}/todos/${id}`);
+  }
+
+  deleteTodo(username, id) {
+    return this.http.delete(`http://localhost:8080/users/${username}/todos/${id}`);
+  }
 }
+
+
