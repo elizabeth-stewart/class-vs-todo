@@ -40,7 +40,7 @@ export class TodoComponent implements OnInit {
     } else {
       this.todoService.updateTodo('templeton', this.id, this.todo)
         .subscribe(
-          this.router.navigate(['todos'])
+          data => this.router.navigate(['todos'])
         );
     }
   }
