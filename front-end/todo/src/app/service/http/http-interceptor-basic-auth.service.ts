@@ -1,7 +1,5 @@
 import { HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { nextContext } from '@angular/core/src/render3';
-import { Observable } from 'rxjs/internal/Observable';
 import { BasicAuthenticationService } from '../basic-authentication.service';
 
 @Injectable({
