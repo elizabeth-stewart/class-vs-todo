@@ -1,4 +1,4 @@
-package com.bearcat.rest.webservices.restfulwebservices.basic.auth;
+package com.bearcat.rest.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

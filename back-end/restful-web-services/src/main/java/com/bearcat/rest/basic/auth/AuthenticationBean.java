@@ -1,4 +1,4 @@
-package com.bearcat.rest.webservices.restfulwebservices.basic.auth;
+package com.bearcat.rest.basic.auth;
 
 public class AuthenticationBean {
     private String message;
