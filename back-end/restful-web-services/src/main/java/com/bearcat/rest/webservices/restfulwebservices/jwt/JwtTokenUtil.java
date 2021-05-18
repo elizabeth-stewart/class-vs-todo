@@ -18,6 +18,9 @@ import java.util.function.Function;
 @Component
 public class JwtTokenUtil implements Serializable {
 
+//    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW1wbGV0b24iLCJleHAiOjE2MjE5ODEyNTgsImlhdCI6MTYyMTM3NjQ1OH0.QVp-Jra8jv8KSWGQWkBIHa1LbtS2jugjJzf1-zQ7ZvBAKvF3QTk01DKIZKVLuL9jPA-aHOcoPyVMpkdh-U925g"
+
+
     static final String CLAIM_KEY_USERNAME = "sub";
     static final String CLAIM_KEY_CREATED = "iat";
     private static final long serialVersionUID = -3301605591108950415L;
