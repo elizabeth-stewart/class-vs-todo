@@ -1,14 +1,23 @@
 package com.bearcat.rest.webservices.restfulwebservices.todo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.Objects;
 
+@Entity
 public class Todo {
-    private long id;
+    @Id
+    @GeneratedValue
+    private Long id;
     private String username;
     private String description;
     private Date targetDate;
     private boolean isDone;
+
+    protected Todo() {
+    }
 
     public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
         this.id = id;
@@ -63,7 +72,7 @@ public class Todo {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Todo todo = (Todo) o;
-        return id == todo.id;
+        return id.equals(todo.id);
     }
 
     @Override
